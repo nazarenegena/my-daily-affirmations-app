@@ -21,11 +21,11 @@ const config: Config = {
       montserrat: ["Montserrat", "sans-serif"],
       },
          // setting up the default breakpoints
-  screens: {
-    xs: "480px",
-    sm: "768px",
-    md: "1060px",
-  },
+  // screens: {
+  //   xs: "480px",
+  //   sm: "768px",
+  //   md: "1060px",
+  // },
       // backgroundImage: {
       //   "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
       //   "gradient-conic":
