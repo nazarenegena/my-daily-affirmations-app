@@ -6,7 +6,7 @@ type Props = {};
 
 const HeroSection = (props: Props) => {
   const BannerText =
-    "lg:text-8xl ml-[2rem] md:text-8xl text-6xl tracking-widest font-serif";
+    "lg:text-8xl ml-[2rem] md:text-8xl text-6xl tracking-widest font-serif text-center";
   const LinkTextStyles =
     "text-md font-medium text-zinc-800 font-dmsans hover:text-primary-500 transition ease-in-out duration-300 mt-5";
 
@@ -34,7 +34,7 @@ const HeroSection = (props: Props) => {
 
       {/* hero header section */}
       <div className="flex flex-col justify-center lg:ml-[16rem]">
-        <p className="text-md md:text-lg lg:text-xl text-zinc-500 tracking-wider ">
+        <p className="text-md md:text-lg lg:text-xl text-zinc-500 tracking-wider text-center ">
           {" "}
           Get To Explore Our Extensive Affirmation And Quotes Collection.
         </p>

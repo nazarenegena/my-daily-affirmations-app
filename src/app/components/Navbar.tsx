@@ -25,7 +25,7 @@ const Navbar = (props: Props) => {
 
       {/* features */}
       <div
-        className={`hidden ${flexBetween} gap-10 border border-zinc-300 py-2 px-3 ml-[10rem] rounded-full`}
+        className={`hidden ${flexBetween} gap-10 border border-zinc-300 py-2 px-3 ml-[16rem] rounded-full`}
       >
         <Link href={"/facebook"} className={`${navTextStyles}`}>
           <RiFacebookCircleLine size={28} fontSize="1.5em" />

@@ -20,6 +20,9 @@ const config: Config = {
       dmsans: ["DM Sans", "sans-serif"],
       montserrat: ["Montserrat", "sans-serif"],
       },
+      backgroundImage: {
+        'my_bg_image' : "url('/assets/cliff.jpg')",
+      }
          // setting up the default breakpoints
   // screens: {
   //   xs: "480px",
