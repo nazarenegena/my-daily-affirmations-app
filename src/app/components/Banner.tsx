@@ -1,25 +1,24 @@
 import React from "react";
 import Image from "next/image";
-
 import SmileFace from "@/assets/smileface.jpg";
 import Potrait from "@/assets/potrait.jpg";
 import FacePic from "@/assets/faceprofile.jpg";
 import VisionPic from "@/assets/visionpic.jpg";
 import { BiSolidBadgeCheck } from "react-icons/bi";
-import Cliff from "@/assets/cliff.jpg";
-
-import Quote from "./Quote";
+import ActionButton from "./ActionButtion";
+import BannerQuote from "./BannerQuote";
 
 type Props = {};
 
 const Banner = (props: Props) => {
-  const imageStyles = "rounded-full lg:w-14 lg:h-14 w-8 h-8  object-cover";
+  const imageStyles =
+    "rounded-full lg:w-14 lg:h-14 md:w-12 md:h-12 w-10 h-10  object-cover";
   const cardStyles = "bg-white h-96 mt-16 shadow-lg rounded-xl py-4 px-5";
   return (
     <div className="lg:flex lg:flex-row flex flex-col">
       {/*the daily quotes  */}
       <div className="flex w-[30rem]">
-        <Quote />
+        <BannerQuote />
       </div>
 
       {/* client appreciation section  */}
@@ -50,9 +49,7 @@ const Banner = (props: Props) => {
             <div className="text-sm font-medium text-zinc-500 font-montserrat text-center">
               We have telemedicine <br /> extremely easy to use for both{" "}
             </div>
-            <button className="border border-primary-500 lg:w-48 h-10 w-32 mt-16 rounded-full hover:bg-primary-500 hover:text-white">
-              View More
-            </button>
+            <ActionButton title="Explore" className="mt-16" />
           </div>
 
           {/* clients image */}
@@ -63,7 +60,7 @@ const Banner = (props: Props) => {
             </div>
 
             <div className="flex mt-4">
-              <div className="grid grid-cols-2 gap-2 bg-white p-2  w-36 h-36  rounded-xl">
+              <div className="grid grid-cols-2 gap-2 bg-white p-2  lg:w-1/2 md:w-40 h-36 w-56 rounded-xl">
                 <Image
                   src={Potrait}
                   alt="potrait"
@@ -85,12 +82,12 @@ const Banner = (props: Props) => {
                   className={`${imageStyles}`}
                 />
               </div>
-              <div className="ml-7 lg:mt-5 mt-0">
-                <div>
+              <div className="ml-7 lg:mt-5  mt-0">
+                <div className="">
                   <p className="lg:text-sm text-xs font-semibold">
                     Bessie Cooper
                   </p>
-                  <p className="hidden md:flex lg:flex text-xs mt-1 italic text-zinc-700">
+                  <p className="hidden md:flex lg:flex text-xs lg:mt-1 mt-0 italic text-zinc-700">
                     member since 2021
                   </p>
                 </div>
@@ -104,12 +101,6 @@ const Banner = (props: Props) => {
             </div>
           </div>
         </div>
-        {/* <div className="flex">
-          <button className="border border-primary-500 w-40 h-10">
-            Popular Quotes
-          </button>
-          <p>Icon</p>
-        </div> */}
       </div>
     </div>
   );

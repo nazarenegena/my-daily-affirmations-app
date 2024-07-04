@@ -41,10 +41,6 @@ const HeroSection = (props: Props) => {
         <div className="mt-10">
           <h1 className={`${BannerText}`}>Your Daily </h1>{" "}
           <h1 className={`${BannerText} mt-8`}> Affirmations ...</h1>
-          {/* <p className=" mt-5 text-md text-zinc-500 tracking-wider left-[20rem] w-64 leading-9">
-            Motivational Quotes, Affirmations, and insightful content delivered
-            to your inbox every morning!
-          </p> */}
         </div>
       </div>
     </div>

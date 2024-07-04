@@ -5,6 +5,7 @@ import { CgMenuRound } from "react-icons/cg";
 import { RiFacebookCircleLine } from "react-icons/ri";
 import { TiSocialLinkedinCircular } from "react-icons/ti";
 import Link from "next/link";
+import ActionButtion from "./ActionButtion";
 
 type Props = {};
 
@@ -15,7 +16,7 @@ const Navbar = (props: Props) => {
     "text-lg font-medium text-zinc-800 font-dmsans hover:text-primary-500 transition ease-in-out duration-300";
 
   return (
-    <nav className={`${flexBetween}  py-6 mt-5`}>
+    <nav className={`${flexBetween}  py-6 mt-5  bg-background-grey`}>
       {/* logo */}
       <Link href={"/"} className={`${navTextStyles}`}>
         <div className="text-2xl font-dmsans font-extrabold ">
@@ -43,9 +44,8 @@ const Navbar = (props: Props) => {
         <button className="text-primary-500 mr-10 font-medium hover:underline hover:underline-offset-8">
           Sign In
         </button>
-        <button className="border-primary-500 border-2 px-6 py-1 rounded-2xl flex flex-col hover:bg-primary-500 hover:text-white ">
-          Become a member
-        </button>
+
+        <ActionButtion title="Become a member" />
       </div>
       {/* sidebar */}
       <button

@@ -1,4 +1,5 @@
 import Banner from "./components/Banner";
+import Content from "./components/Content";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 
@@ -8,6 +9,7 @@ export default function Home() {
       <Navbar />
       <HeroSection />
       <Banner />
+      <Content />
     </div>
   );
 }
