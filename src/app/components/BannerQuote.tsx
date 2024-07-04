@@ -32,7 +32,7 @@ const BannerQuote = (props: Props) => {
       style={{ backgroundImage: `url(${LakeView.src})` }}
     >
       <div className="bg-zinc-500 bg-opacity-30 h-full flex flex-col justify-center items-center">
-        <p className="text-white font-semibold z-40 text-xl italic text-center mt-10 leading-8">
+        <p className="text-white font-semibold z-20 text-xl italic text-center mt-10 leading-8">
           {quoteData.quote}
         </p>
         <p className="text-neutral-100 font-semibold  text-sm mt-10">
